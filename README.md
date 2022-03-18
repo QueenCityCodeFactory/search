@@ -1,9 +1,7 @@
-CakeDC Search Plugin
+CakeDC Search Plugin - Updated By QueenCityCodeFactory
 ========================
 
-[![Bake Status](https://secure.travis-ci.org/CakeDC/search.png?branch=master)](http://travis-ci.org/CakeDC/search)
-[![Downloads](https://poser.pugx.org/CakeDC/search/d/total.png)](https://packagist.org/packages/CakeDC/search)
-[![Latest Version](https://poser.pugx.org/CakeDC/search/v/stable.png)](https://packagist.org/packages/CakeDC/search)
+We Reccomed using [FrinedsOfCake/Search](https://github.com/FriendsOfCake/search). But if you were like us and had a large codebase that was using this for years and recently updated to latest version of CakePHP in the 3.x you might want to considered using this until you can refactor or upgrade to CakePHP 4.x
 
 This **Search** plugin enables developers to quickly implement the [POST-Redirect-GET](docs/Documentation/Post-Redirect-Get.md) pattern.
 
@@ -20,8 +18,8 @@ As mentioned before, this plugin helps you to implement searching for data using
 Requirements
 ------------
 
-* CakePHP 2.5+
-* PHP 5.2.8+
+* CakePHP 3.10.0+
+* PHP 7.2.0+
 
 Documentation
 -------------

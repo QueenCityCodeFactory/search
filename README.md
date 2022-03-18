@@ -1,7 +1,7 @@
 CakeDC Search Plugin - Updated By QueenCityCodeFactory
 ========================
 
-We Reccomed using [FrinedsOfCake/Search](https://github.com/FriendsOfCake/search). But if you were like us and had a large codebase that was using this for years and recently updated to latest version of CakePHP in the 3.x you might want to considered using this until you can refactor or upgrade to CakePHP 4.x
+We Reccomed using [FriendsOfCake/Search](https://github.com/FriendsOfCake/search). But if you were like us and had a large codebase that was using this for years and recently updated to latest version of CakePHP in the 3.x you might want to considered using this until you can refactor or upgrade to CakePHP 4.x
 
 This **Search** plugin enables developers to quickly implement the [POST-Redirect-GET](docs/Documentation/Post-Redirect-Get.md) pattern.
 

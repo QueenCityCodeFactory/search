@@ -2,3 +2,4 @@
 /vendor/
 /phpunit.phar
 /.idea
+.DS_Store

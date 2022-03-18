@@ -1,6 +1,6 @@
 {
-	"name": "cakedc/search",
-	"description": "Search Plugin for CakePHP",
+	"name": "queencitycodefactory/search",
+	"description": "Search Plugin for CakePHP 3.10",
 	"type": "cakephp-plugin",
 	"keywords": ["cakephp", "search", "prg", "post-redirect-get", "filter"],
 	"homepage": "http://github.com/CakeDC/search",
@@ -21,11 +21,11 @@
 		"source": "https://github.com/CakeDC/search"
 	},
 	"require": {
-		"php": ">=5.4.16",
+		"php": ">=7.2.0",
 		"cakephp/plugin-installer": "*"
 	},
 	"require-dev": {
-		"cakephp/cakephp": "~3.0",
+		"cakephp/cakephp": "3.10.*",
 		"phpunit/phpunit": "*"
 	},
 	"autoload": {

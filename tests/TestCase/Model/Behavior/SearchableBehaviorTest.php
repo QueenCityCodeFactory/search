@@ -48,7 +48,7 @@ class ArticlesTable extends Table {
 	public function initialize(array $options) {
 		$this->belongsTo('Tagged');
 		$this->belongsToMany('Tags', [
-			'through' => $this->association('Tagged')->target()
+			'through' => $this->getAssociation('Tagged')->target()
 		]);
 		$this->addBehavior('Search.Searchable');
 	}

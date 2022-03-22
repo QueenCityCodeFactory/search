@@ -19,33 +19,33 @@ use Cake\ORM\Query;
  * Contains a filter condition for the query test
  * testQueryWithBehaviorCallCondition.
  */
-class FilterBehavior extends Behavior {
+class FilterBehavior extends Behavior
+{
+    /**
+     * mostFilterConditions
+     *
+     * @param Query $query Query to find
+     * @param array $options Options
+     *
+     * @return Query
+     */
+    public function findMostFilterConditions(Query $query, $options = [])
+    {
+        $data = $options['data'];
+        $filter = $data['filter'];
+        if (!in_array($filter, ['views', 'comments'])) {
+            return [];
+        }
 
-/**
- * mostFilterConditions
- *
- * @param Query $query Query to find
- * @param array $options Options
- *
- * @return Query
- */
-	public function findMostFilterConditions(Query $query, $options = array()) {
-		$data = $options['data'];
-		$filter = $data['filter'];
-		if (!in_array($filter, array('views', 'comments'))) {
-			return array();
-		}
+        switch ($filter) {
+            case 'views':
+                $cond = $query->repository()->alias() . '.views > 10';
+                break;
+            case 'comments':
+                $cond = $query->repository()->alias() . '.comments > 10';
+                break;
+        }
 
-		switch ($filter) {
-			case 'views':
-				$cond = $query->repository()->alias() . '.views > 10';
-				break;
-			case 'comments':
-				$cond = $query->repository()->alias() . '.comments > 10';
-				break;
-		}
-
-		return $query->where($cond);
-	}
-
+        return $query->where($cond);
+    }
 }
